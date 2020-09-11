@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XFSpeechDemo.MainPage">
+
+
+
+    <StackLayout Margin="10,50,10,10">
+        <StackLayout Padding="5,10">
+            <Label FontSize="Medium" Text="Hello to my App" />
+        </StackLayout>
+        
+        <Button
+            x:Name="start"
+            Text="Start"
+                Clicked="Start_Clicked"/>
+        <Button
+            x:Name="send"
+            Text="Send"
+                Clicked="Send_Clicked"/>
+        <Label 
+            x:Name="recon"
+            Text="Recognized text" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center" />
+
+        <StackLayout VerticalOptions="EndAndExpand">
+            <Entry
+                x:Name="EntryIP" Placeholder="Please entry IP" Text=""/>
+            <Entry
+                x:Name="EntryPort" Placeholder="Please entry Port" Text=""/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
